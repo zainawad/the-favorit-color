@@ -1,0 +1,37 @@
+own_book=[]
+first_book= input("Enter the name of a book you own ")
+sec_book=input("Enter the name of another book you own (or press 'Enter' to skip): ")
+own_book.append(first_book)
+own_book.append(sec_book)
+
+if sec_book :
+  print(f"my library : {own_book}")
+else:
+  print("you did not write any thing")
+future_book=[]
+book1=input("Enter the name of a book you wish to have in the future: ") 
+book2=input("Enter the name of another book you wish to have (or press 'Enter' to skip): ")
+future_book.append(book1) 
+
+future_book.append(book2)
+
+if book2 :
+  print(future_book)
+else:
+  print("you did not write any thing")
+
+acqired_book=input("Enter the name of a book from your wishlist that you've acquired (or press 'Enter' to skip): ")
+
+if acqired_book in future_book:
+ future_book.remove(acqired_book)
+ own_book.append(acqired_book)
+
+print (f"Updated Library: {own_book} ")
+  
+print (f"Updated Wishlist: {future_book} ")
+
+donate_book=input("Enter the name of a book from your library you wish to donate (or press 'Enter' to skip):")
+if donate_book in own_book:
+  own_book.remove(donate_book)
+
+print(f"my library : {own_book}")
