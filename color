@@ -1,0 +1,12 @@
+colors=[]
+fav_colors=input("Add the first color you like  ")
+colors.append(fav_colors)
+choice_adding=input("do you like to add any color Yes or No  " ).lower() 
+if choice_adding == "yes" :
+ adding_color=input("Add another color you like  ").lower() 
+ colors.append(adding_color)
+ print (f"The favorite colors is {colors}")
+elif choice_adding == "no":
+  print (f"The favorite colors is {colors}")
+else:
+  print ("Please try again ")
