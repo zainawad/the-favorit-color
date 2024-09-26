@@ -1,0 +1,15 @@
+print("Welcome to place the rabbit")
+filed=[['🌿', '🌿',  '🌿'],['🌿', '🌿',  '🌿'],['🌿', '🌿',  '🌿']]
+print (f"{filed[0]}\n{filed[1]}\n{filed[2]}\n")
+print("Where should the rabbit go? 🐇 ")
+place=input("Please choose a row and a column") 
+#place user enter
+row=int(place[0])
+colum=int(place[1])
+#place rabiit-1
+# وبعدها الرقمين دول هنطرح منهم 1 علشان نروح للاندكس ,اخدنا من المستخدم المكان بالضبط وهو الرقمين 
+filed[row-1][colum-1]="🐇"
+
+
+print("Success ....")
+print(f"{filed[0]}\n{filed[1]}\n{filed[2]}\n")
